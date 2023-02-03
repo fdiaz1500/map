@@ -28,6 +28,8 @@ On Windows:
 PROJECT SNAPSHOT
 =========
 
+
+```
 map/
 ├── docs
 │   └── guide.pdf
@@ -41,3 +43,4 @@ map/
     └── player.py
 
 3 directories, 8 files
+```
