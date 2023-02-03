@@ -1,31 +1,36 @@
 # MAP
-
-
-INTRO
 =====
 
 Move and Pivot
 
 
-USAGE
+## INTRO
+========
+
+An adventure game.
+
+## USAGE
 =====
 
 On Mac:
 
+    $ cd /path/to/this/directory
     $ chmod +x run-mac.sh
     $ ./run-mac.sh
 
 On Linux:
 
+    $ cd /path/to/this/directory
     $ chmod +x run-linux.sh
     $ ./run-linux.sh
 
 On Windows:
 
+    $ cd /path/to/this/directory
     $ ./run-windows.bat
 
 
-PROJECT SNAPSHOT
+## PROJECT SNAPSHOT
 =========
 
 
