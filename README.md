@@ -1,17 +1,13 @@
 # MAP
-=====
 
 Move and Pivot
 
 
 ## INTRO
-========
 
 An adventure game.
 
 ## USAGE
-=====
-
 On Mac:
 
     $ cd /path/to/this/directory
@@ -31,7 +27,6 @@ On Windows:
 
 
 ## PROJECT SNAPSHOT
-=========
 
 
 ```
