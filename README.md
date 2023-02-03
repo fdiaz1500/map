@@ -17,12 +17,12 @@ On Mac:
 
 On Linux:
 
-    $ chmod +x run-mac.sh
-    $ ./run-mac.sh
+    $ chmod +x run-linux.sh
+    $ ./run-linux.sh
 
 On Windows:
 
-    $ ./run-mac.bat
+    $ ./run-windows.bat
 
 
 PROJECT SNAPSHOT
