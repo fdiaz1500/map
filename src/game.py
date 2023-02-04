@@ -4,6 +4,7 @@ import sys
 # import cgi
 # import cgitb
 # cgitb.enable()
+import tkinter as tk
 
 from player import Player
 
@@ -64,6 +65,28 @@ def quit_app():
     print('\nGoodbye..\n')
     sys.exit()
 
+def gui():
+    root = tk.Tk()
+    root.title('Move and Pivot - A text adventure game')
+
+    label = tk.Label(root, text='')
+    label.pack()
+
+    start_button = tk.Button(root, text='Start game', command=play)
+    start_button.pack()
+
+    root.mainloop()
 
 if __name__ == '__main__':
-    play()
+
+    try:
+        # Check if argument passed in
+        args = sys.argv[1]
+    except Exception as e:
+        # print(e)
+        args = None
+
+    if args:
+        gui()
+    else:
+        play()

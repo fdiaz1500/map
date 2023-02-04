@@ -9,7 +9,15 @@ python3AbsolutePath=`which python3`
 # Get absolute path of game.py
 gamepyAbsolutePath="$script_dir/src/game.py"
 
-# Start main script
-bash -c "$python3AbsolutePath $gamepyAbsolutePath"
-
+# If parameter is not empty
+if [[ -n "$1" ]]; then
+    bash -c "$python3AbsolutePath $gamepyAbsolutePath $1"
+else
+    # No parameter detected, proceed normal console execution
+    bash -c "$python3AbsolutePath $gamepyAbsolutePath"
+fi
+echo " "
 read -n 1 -s -r -p "Press any key to continue.."
+echo " "
+
+
