@@ -1,41 +1,38 @@
 #!/usr/bin/env python3
 
 import sys
-import cgi
-import cgitb
-cgitb.enable()
-
+# import cgi
+# import cgitb
+# cgitb.enable()
 
 from player import Player
 
 def play():
     print(' ')
     print('========================')
-    print('Escape from Cave Terror!')
+    print('Move and Pivot!')
     print('========================')
     print(' ')
 
-    # Setup envrionment
+    # Create player
     player  = Player()
-    form    = cgi.FieldStorage()
-    user    = form.getfirst('user', '').upper()  # This is thread safe
 
     # Main game loop
     while True:
         action_input = get_player_command()
         if action_input in ['n', 'N']:
-            ai_north()
+            move_north()
         elif action_input in ['s', 'S']:
-            ai_south()
+            move_south()
         elif action_input in ['e', 'E']:
-            ai_east()
+            move_east()
         elif action_input in ['w', 'W']:
-            ai_west()
+            move_west()
         elif action_input in ['i', 'I']:
             print(' ')
             player.print_inventory()
         elif action_input in ['q', 'Q']:
-            ai_quit()
+            quit_app()
         else:
             print('Invalid action!')
         
@@ -51,23 +48,22 @@ def get_player_command():
     print(' ')
     return input('Action: ')
 
-def ai_north():
+def move_north():
     print('\nGo North!\n')
 
-def ai_south():
+def move_south():
     print('\nGo South!\n')
 
-def ai_east():
+def move_east():
     print('\nGo East!\n')
 
-def ai_west():
+def move_west():
     print('\nGo West!\n')
 
-def ai_quit():
+def quit_app():
     print('\nGoodbye..\n')
     sys.exit()
 
 
 if __name__ == '__main__':
-    cgi.test()
     play()

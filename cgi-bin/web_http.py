@@ -2,7 +2,7 @@
 
 from http.server import HTTPServer
 
-from cgi import RequestHandler
+from web_cgi import RequestHandler
 
 def print_exception(message):
     import sys

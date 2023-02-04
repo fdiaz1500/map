@@ -6,12 +6,13 @@ cgitb.enable()
 
 from http.server import CGIHTTPRequestHandler
 
-def print_exception():
+def print_exception(message):
     import sys
     sys.stderr = sys.stdout
     print('Content-Type: text/plain')
     print()
-    print('I AM AN EXCEPTION!')
+    print('{}'.format(message))
+
 
 def main_page(request):
     # Main page of the web application
