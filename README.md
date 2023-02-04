@@ -8,17 +8,11 @@ Move and Pivot
 An adventure game.
 
 ## USAGE
-On Mac:
+On Linux or Mac:
 
     $ cd /path/to/this/directory
-    $ chmod +x run-mac.sh
-    $ ./run-mac.sh
-
-On Linux:
-
-    $ cd /path/to/this/directory
-    $ chmod +x run-linux.sh
-    $ ./run-linux.sh
+    $ chmod +x run-linux-or-mac.sh
+    $ ./run-linux-or-mac.sh
 
 On Windows:
 
@@ -34,13 +28,12 @@ map/
 ├── docs
 │   └── guide.pdf
 ├── README.md
-├── run-linux.sh
-├── run-mac.sh
+├── run-linux-or-mac.sh
 ├── run-windows.bat
 └── src
     ├── game.py
     ├── items.py
     └── player.py
 
-3 directories, 8 files
+3 directories, 7 files
 ```
