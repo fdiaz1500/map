@@ -1,0 +1,17 @@
+## WEB ASSETS
+
+```
+css/        :   A directory for storing CSS (Cascading Style Sheets) files.
+
+js/         :   A directory for storing Javascript files.
+
+images/     :   A directory for storing image files such as JPEG, PNG, and GIF.
+
+fonts/      :   A directory for storing font files such as TTF and OTF.
+
+vendor/     :   A directory for storing third-party libraries and assets, such as
+                jQuery or Bootstrap
+
+uploads/    :   A directory for storing user-generated content, such as images or files uploaded
+                by users
+```
