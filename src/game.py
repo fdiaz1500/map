@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 import sys
+import cgi
+
 
 from player import Player
 
@@ -22,6 +24,7 @@ def play():
         elif action_input in ['w', 'W']:
             ai_west()
         elif action_input in ['i', 'I']:
+            print(' ')
             player.print_inventory()
         elif action_input in ['q', 'Q']:
             ai_quit()
@@ -30,11 +33,13 @@ def play():
         
 def get_player_command():
     print(' ')
-    print('[ n/N ] North')
-    print('[ s/S ] South')
-    print('[ e/E ] East')
-    print('[ w/W ] West')
-    print('[ q/Q ] Quit game')
+    print('[ n/N ] move north')
+    print('[ s/S ] move south')
+    print('[ e/E ] move east')
+    print('[ w/W ] move west')
+    print(' ')
+    print('[ i/I ] show inventory')
+    print('[ q/Q ] quit game')
     print(' ')
     return input('Action: ')
 
@@ -54,4 +59,6 @@ def ai_quit():
     print('\nGoodbye..\n')
     sys.exit()
 
-play()
+
+if __name__ == '__main__':
+    play()
