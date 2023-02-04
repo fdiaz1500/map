@@ -3,6 +3,7 @@
 import sys
 import cgi
 import cgitb
+cgitb.enable()
 
 
 from player import Player
@@ -68,4 +69,5 @@ def ai_quit():
 
 
 if __name__ == '__main__':
+    cgi.test()
     play()

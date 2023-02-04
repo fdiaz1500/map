@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Save current working directory
+# Save the path of this script's directory
 script_dir=$(dirname "$0")
 
 # Get absolute path of Python3 system interpreter
