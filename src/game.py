@@ -39,11 +39,13 @@ def play():
         
 def get_player_command():
     print(' ')
+    # directional controls
     print('[ n/N ] move north')
     print('[ s/S ] move south')
     print('[ e/E ] move east')
     print('[ w/W ] move west')
     print(' ')
+    # game controls 
     print('[ i/I ] show inventory')
     print('[ q/Q ] quit game')
     print(' ')
