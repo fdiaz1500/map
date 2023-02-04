@@ -1,2 +1,2 @@
 @echo off
-:: This file starts the program on Windows.
+:: If using Windows, run me first.

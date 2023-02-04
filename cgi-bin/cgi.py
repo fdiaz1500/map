@@ -4,7 +4,7 @@ import cgi
 import cgitb
 cgitb.enable()
 
-from http.server import HTTPServer, CGIHTTPRequestHandler
+from http.server import CGIHTTPRequestHandler
 
 def print_exception():
     import sys
@@ -41,6 +41,7 @@ def result_page(request):
     '''.format(cgi.escape(name))
     return content.encode('utf-8')
 
+
 # Define the handler for the CGIHTTPRequestHandler
 class RequestHandler(CGIHTTPRequestHandler):
     def do_GET(self):
@@ -60,16 +61,3 @@ class RequestHandler(CGIHTTPRequestHandler):
             self.wfile.write(result_page(self))
         else:
             CGIHTTPRequestHandler.do_POST(self)
-
-
-
-PORT = 8000
-
-# form = cgi.FieldStorage()
-# user = form.getfirst('user', '').upper()
-# print('hi')
-server = HTTPServer(('', PORT), RequestHandler)
-print('Starting web server on port {}...'.format(PORT))
-server.serve_forever()
-
-
