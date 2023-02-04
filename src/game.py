@@ -2,6 +2,7 @@
 
 import sys
 import cgi
+import cgitb
 
 
 from player import Player
@@ -12,7 +13,13 @@ def play():
     print('Escape from Cave Terror!')
     print('========================')
     print(' ')
-    player = Player()
+
+    # Setup envrionment
+    player  = Player()
+    form    = cgi.FieldStorage()
+    user    = form.getfirst('user', '').upper()  # This is thread safe
+
+    # Main game loop
     while True:
         action_input = get_player_command()
         if action_input in ['n', 'N']:
