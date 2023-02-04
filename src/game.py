@@ -10,7 +10,7 @@ from player import Player
 def play():
     print(' ')
     print('========================')
-    print('Move and Pivot!')
+    print('    Move and Pivot!')
     print('========================')
     print(' ')
 
