@@ -66,16 +66,20 @@ def quit_app():
     sys.exit()
 
 def gui():
-    root = tk.Tk()
-    root.title('Move and Pivot - A text adventure game')
+    gui = tk.Tk()
+    gui.title('Move and Pivot - A text adventure game')
+    gui.geometry('500x200')
 
-    label = tk.Label(root, text='')
+    label = tk.Label(gui, text='')
     label.pack()
 
-    start_button = tk.Button(root, text='Start game', command=play)
+    start_button = tk.Button(gui, text='Start game', command=play)
     start_button.pack()
 
-    root.mainloop()
+    quit_button = tk.Button(gui, text='Quit game', command=quit_app)
+    quit_button.pack()
+
+    gui.mainloop()
 
 if __name__ == '__main__':
 
