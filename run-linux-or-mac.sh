@@ -7,7 +7,8 @@ script_dir=$(dirname "$0")
 python3AbsolutePath=`which python3`
 
 # Get absolute path of game.py
-gamepyAbsolutePath="$script_dir/src/game.py"
+# gamepyAbsolutePath="$script_dir/src/game.py"
+gamepyAbsolutePath="$script_dir/src/hauntedroadhome.py"
 
 # If parameter is not empty
 if [[ -n "$1" ]]; then
@@ -16,8 +17,8 @@ else
     # No parameter detected, proceed normal console execution
     bash -c "$python3AbsolutePath $gamepyAbsolutePath"
 fi
-echo " "
-read -n 1 -s -r -p "Press any key to continue.."
-echo " "
+# echo " "
+# read -n 1 -s -r -p "Press any key to continue.."
+# echo " "
 
 
