@@ -8,7 +8,9 @@ Move and Pivot
 A collection of adventure games.
 
 ## FEATURING
-hauntedroadhome.py
+
+hauntedroadhome.py - by Incog Rico
+
 ```
 
 
