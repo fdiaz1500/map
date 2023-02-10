@@ -19,7 +19,7 @@ On Windows:
     $ cd /path/to/this/directory
     $ ./run-windows.bat
 
-Run game in web browser:
+Run game in web browser (see cgi-bin/README.md):
 
     $ cd /path/to/this/directory
     $ python3 cgi-bin/web_http.py
