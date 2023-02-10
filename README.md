@@ -5,10 +5,30 @@ Move and Pivot
 
 ## INTRO
 
-An adventure game.
+A collection of adventure games.
+
+## FEATURING
+```
+hauntedroadhome.py
+
+
+       #######################################
+       #                                     #
+       #           THE NIGHT BEFORE          #
+       #                                     #
+       #######################################
+
+
+
+
+Would you like to try and Survive the Night? (Y/N):
+```
+
+
 
 ## USAGE
 On Linux or Mac:
+
 
     $ cd /path/to/this/directory
     $ chmod +x run-linux-or-mac.sh
