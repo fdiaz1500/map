@@ -8,8 +8,8 @@ Move and Pivot
 A collection of adventure games.
 
 ## FEATURING
-```
 hauntedroadhome.py
+```
 
 
        #######################################
